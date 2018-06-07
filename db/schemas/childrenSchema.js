@@ -1,4 +1,5 @@
 const Schema = require("mongoose").Schema;
+const activitySchema = require("./activitySchema")
 
 //create children model
 
