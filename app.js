@@ -10,9 +10,17 @@ const usersRouter = require('./routes/users');
 const app = express();
 require("dotenv").config();
 
-//mongoose
 const mongoose = require("mongoose");
 
+app.get
+
+
+
+
+
+
+
+//connect to database
 if (process.env.MONGODB_URI) {
   mongoose.connect(process.env.MONGODB_URI);
 } else {

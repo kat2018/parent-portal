@@ -1,3 +1,4 @@
+const Schema = require("mongoose").Schema;
 
 //create parents model
 
