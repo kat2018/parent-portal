@@ -1,5 +1,8 @@
 const mongoose = require("mongoose");
-const Activities = require(".../models/Activities");
+const Activity = require(".../models/Activities");
+const Children = require(".../models/Children");
+const Parent = require(".../models/Parent");
+
 
 // Connect to database
 if (process.env.MONGODB_URI) {
