@@ -1,10 +1,7 @@
-const mongoose = require('mongoose');
-
-const Schema = mongoose.Schema;
 
 //create parents model
 
-const parent = newSchema({
+const ParentSchema = newSchema({
     firstName: {
         type: String,
         require: [true, 'required field']
@@ -16,4 +13,4 @@ const parent = newSchema({
     email: String
 })
 
-const Parent = mongoose.model('Parent')
+module.exports = ParentSchema
