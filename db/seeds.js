@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+const Activities = require('.../models/Activities');
 
 // Connect to database
 if (process.env.MONGODB_URI) {
