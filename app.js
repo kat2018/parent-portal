@@ -1,8 +1,11 @@
 const createError = require('http-errors');
+const compression = require("compression");
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+
+
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -12,9 +15,25 @@ require("dotenv").config();
 
 const mongoose = require("mongoose");
 
-app.get
+// compress all responses
+app.use(compression())
 
+// server-sent event stream (Code Sourced from https://www.npmjs.com/package/compression)
+app.get('/events', function (req, res) {
+  res.setHeader('Content-Type', 'text/event-stream')
+  res.setHeader('Cache-Control', 'no-cache')
 
+  // send a ping approx every 2 seconds
+  var timer = setInterval(function () {
+    res.write('data: ping\n\n')
+
+    res.flush()
+  }, 2000)
+
+  res.on('close', function () {
+    clearInterval(timer)
+  })
+})
 
 
 
