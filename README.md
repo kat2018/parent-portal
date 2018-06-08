@@ -1,5 +1,7 @@
 # parent-portal
 
+Welcome to Parent Portal! project two at General Assembly by Katia Eidson.
+
 Heroku: https://lit-woodland-71027.herokuapp.com/
 
 Trello: https://trello.com/b/9JcnS5WL/parent-portal-wdi-project-2-kat2018
