@@ -3,9 +3,6 @@ const mongoose = require("mongoose");
 // const Children = require(".../models/Children");
 const Parent = require("../models/Parent");
 
-//connect to the database
-mongoose.connect("mongodb://localhost/parent-portal");
-
 // Connect to database
 if (process.env.MONGODB_URI) {
     mongoose.connect(process.env.MONGODB_URI);
@@ -20,31 +17,32 @@ mongoose.connection.once("open", function () {
     console.log("Mongoose has connected to MongoDB!");
 });
 
-
-//new parent
 Parent.remove()
-const parent1 = new Parent({
-  firstName: "Mary",
-  lastName: "Lynn",
-  email: "mary@lynn.com"
-});
-const parent2 = new Parent({
-    firstName: "John",
-    lastName: "Smith",
-    email: "jsmith@msn.com"
-});
-const parent3 = new Parent({
-  firstName: "Patty",
-  lastName: "Crabby",
-  email: "crabby@patty.com"
-});
+.then(()=>{
+
+    const parent1 = new Parent({
+        firstName: "Mary",
+        lastName: "Lynn",
+        email: "mary@lynn.com"
+    });
+    const parent2 = new Parent({
+        firstName: "John",
+        lastName: "Smith",
+        email: "jsmith@msn.com"
+    });
+    const parent3 = new Parent({
+        firstName: "Patty",
+        lastName: "Crabby",
+        email: "crabby@patty.com"
+    });
+    return Parent.create([parent1, parent2, parent3])
+}).then(() => {
+    console.log('Saved data!')
+    mongoose.connection.close()
+})
+
+
 
 
 
 //remove parent profile
-
-Parent.insertOne();
-
-Parent.deleteOne().then(() => {
-  const parent1 = new Parent({});
-});

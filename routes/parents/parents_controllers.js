@@ -10,6 +10,7 @@ router.get('/', (req, res, next) => {
     Parent
         .find()
         .then((listOfParents) => {
+            console.log(listOfParents);
             res.render('parents/index', {
                 listOfParents: listOfParents
             })
