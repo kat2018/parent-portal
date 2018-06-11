@@ -1,4 +1,5 @@
 const Schema = require("mongoose").Schema;
+const childrenSchema = require('./childrenSchema')
 
 //create parents model
 

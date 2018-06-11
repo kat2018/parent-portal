@@ -6,6 +6,10 @@
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kat2018/parent-portal"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "compression": "^1.7.2",
@@ -19,5 +23,6 @@
     "morgan": "~1.9.0",
     "nodemon": "^1.17.5"
   },
-  "main": "app.js"
+  "main": "app.js",
+  "start": "nodemon app.js"
 }

@@ -19,3 +19,12 @@ mongoose.connection.on('error', function (err) {
 mongoose.connection.once('open', function () {
     console.log("Mongoose has connected to MongoDB!");
 });
+
+//remove parent profile
+
+Parent.insertOne()
+
+Parent.deleteOne()
+.then(() => {
+  const parent1 = new Parent({});
+});
