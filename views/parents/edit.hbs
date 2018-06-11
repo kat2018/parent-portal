@@ -1,0 +1,10 @@
+<h1>Edit {{parentProfile.title}}</h1>
+<form action="/parents/{{parentProfile._id}}?_method=PUT" method="post">
+<div>
+    <label for="title">Parent Profile</label>
+    <input type="text" name="profile" value="{{parentProfile.firstName}}"/>
+    <input type="text" name="profile" value="{{parentProfile.lastName}}" />
+    <input type="email" name="profile" value="{{parentProfile.email}}" />
+</div>
+<button type="submit">Update</button>
+</form>

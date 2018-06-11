@@ -1,8 +1,5 @@
-.{
-  padding: 0
-}
-
-body{
+body {
+  padding: 0;
   background-color: aquamarine;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font: 12px;

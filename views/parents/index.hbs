@@ -1,1 +1,13 @@
-<h1>Parent Index</h1>
+<h1>Participant Parents</h1>
+
+<ul>
+    {{#each parentProfile}}
+    <li>
+        <a href="/prent/{{_id}}">
+            <p>{{firstName}}</p>
+            <p>{{lastName}}</p>
+            <p>{{email}}</p>
+        </a>
+    </li>
+    {{/each}}
+</ul>

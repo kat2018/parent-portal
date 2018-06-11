@@ -1,0 +1,8 @@
+<h1>{{parentProfile.title}} </h1>
+<h3>First Name: {{parentProfile.firstName}} </h3>
+<h3>Last Name: {{parentProfile.lastName}} </h3>
+<h3>Email: {{parentProfile.email}} </h3>
+
+<form action="/parent{{parentProfile._id}}?_methd=DELETE" method="post">
+    <button type="submit">Delete Parent</button>
+</form>
