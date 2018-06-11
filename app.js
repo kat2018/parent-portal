@@ -57,6 +57,8 @@ app.use('/users', usersRouter);
 //controllers
 const parents_controllers = require("./routes/parents/parents_controllers.js");
 
+// app.use("/routes/parents", parentsController);
+
 
 
 

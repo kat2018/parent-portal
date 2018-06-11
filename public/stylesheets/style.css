@@ -1,8 +1,11 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.{
+  padding: 0
 }
 
-a {
-  color: #00B7FF;
+body{
+  background-color: aquamarine;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font: 12px;
 }
+
+

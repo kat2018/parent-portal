@@ -1,6 +1,6 @@
-const parents = require('express').Router();
-const all = require('./Children');
+const mongoose = require("mongoose");
+const parentSchema = require(".../db/schemas/parentSchema");
 
-models.get('/', all);
+const Parent = mongoose.model("parent", parentSchema);
 
-module.exports = parents
+module.exports = Parent;

@@ -8,3 +8,5 @@ const activitySchema = new Schema({
     endDate: Number,
     Cost: Number
 })
+
+module.exports = activitySchema;

@@ -16,3 +16,4 @@ const ParentSchema = newSchema({
 })
 
 module.exports = ParentSchema
+module.exports = childrenSchema;
