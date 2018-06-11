@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const parentSchema = require(".../db/schemas/parentSchema");
+const parentSchema = require("../db/schemas/parentSchema");
 
 const Parent = mongoose.model("parent", parentSchema);
 

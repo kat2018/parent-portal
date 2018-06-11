@@ -1,9 +1,9 @@
-const Schema = require("mongoose").Schema;
+const Schema = require('mongoose').Schema
 const childrenSchema = require('./childrenSchema')
 
 //create parents model
 
-const ParentSchema = newSchema({
+const ParentSchema = new Schema({
     firstName: {
         type: String,
         require: [true, 'required field']

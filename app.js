@@ -11,6 +11,9 @@ const methodOverride = require('method-override')
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
+const parentProfile = require('./routes/parents/parents_controllers');
+
+
 
 const app = express();
 require("dotenv").config();
@@ -53,8 +56,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use("/parent", parentProfile);
-app.use("/parent/:parentId", parentProfile);
+app.use("/parents", parentProfile);
+app.use("/parents/:parentId", parentProfile);
 
 
 

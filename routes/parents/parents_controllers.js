@@ -1,5 +1,7 @@
 const express = require("express");
 const router = express.Router();
+const Parent = require('../../models/Parent')
+
 
 // GET Listing
 router.get('/', (req, res, next) => {
@@ -8,11 +10,10 @@ router.get('/', (req, res, next) => {
     Parent
         .find()
         .then((listOfParents) => {
-            res.render('parent/index', {
+            res.render('parents/index', {
                 listOfParents: listOfParents
             })
         })
-
        .catch((err) => res.send(err))
 });
 
