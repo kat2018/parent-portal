@@ -6,7 +6,8 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 const hbs = require("hbs");
-
+const mongoose = require("mongoose");
+const methodOverride = require('method-override')
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -14,7 +15,6 @@ const usersRouter = require('./routes/users');
 const app = express();
 require("dotenv").config();
 
-const mongoose = require("mongoose");
 
 // compress all responses
 app.use(compression())
@@ -44,7 +44,7 @@ app.get('/', function (req, res) {
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
-
+app.use(methodOverride('_method'))
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -53,11 +53,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use("/parent", parentProfile);
+app.use("/parent/:parentId", parentProfile);
 
-//controllers
-const parents_controllers = require("./routes/parents/parents_controllers.js");
 
-// app.use("/routes/parents", parentsController);
+
+// //controllers
+// const parents_controllers = require("./routes/parents/parents_controllers");
+
+// app.use("/routes/parents", parentsController); NEED TO FIX THIS
 
 
 
