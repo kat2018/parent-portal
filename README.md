@@ -2,6 +2,8 @@
 
 Welcome to Parent Portal! project two at General Assembly by Katia Eidson.
 
+The goal of this project is to create a database for a school administrator to add new users (parents), include their dependents (child or children) and assign them to activities. 
+
 Heroku: https://lit-woodland-71027.herokuapp.com/
 
 Trello: https://trello.com/b/9JcnS5WL/parent-portal-wdi-project-2-kat2018

@@ -51,7 +51,7 @@ app.get("/events", function(req, res) {
 });
 
 app.get("/", function(req, res) {
-  res.render("Homepage");
+  res.render("index");
 });
 
 // view engine setup
@@ -67,7 +67,6 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/parents", parentProfile);
-app.use("/parents/:parentId", parentProfile);
 
 // //controllers
 // const parents_controllers = require("./routes/parents/parents_controllers");
