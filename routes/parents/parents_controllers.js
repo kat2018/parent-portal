@@ -45,22 +45,22 @@ router.get('/:id', (req,res)=> {
 });
 
 //EDIT Route
-// router.get('/:id/edit', (req, res)=> {
-//     Parent
-//     .findById(req.params.id)
-//     .then((newParent)=>{
-//         res.render('/parents/edit', {
-//             parentProfile: newParent
-//         })
-//     })
-// });
+router.get('/:id/edit', (req, res)=> {
+    Parent
+    .findById(req.params.id)
+    .then((editProfile) => {
+        res.render('parents/edit', {
+            parentProfile: editProfile
+        })
+    })
+});
 
 //UPDATE Route
-// router.put('/:id', (req, res)=>{
-//     Parent.findByIdAndUpdate(req.params.id, req.body, {new: true}).then(()=>{
-//         res.redirect(`/parents/${req.params.if}`)
-//     })
-// });
+router.put('/:id', (req, res)=>{
+    Parent.findByIdAndUpdate(req.params.id, req.body, {new: true}).then(()=>{
+        res.redirect(`/parents/${req.params.id}`)
+    })
+});
 
 //DELETE Route
 router.delete('/:id', (req, res)=> {
