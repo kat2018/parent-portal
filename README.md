@@ -19,18 +19,25 @@ Preview Wireframe
 ![alt text](https://github.com/kat2018/parent-portal/blob/master/public/images/parentPortal.jpg)
 
 ### Technologies used: 
-- body-parser
-- compression
-- cookie-parser
-- debug
-- dotenv
-- express
-- hbs
-- http-errors
-- method-override
-- mongoose
-- morgan
-- nodemon
+- Node
+- Express
+- Handlebars
+- Mongodb
+- Heroku (hosting)
+- Github (version control)
+- Npm Packages: 
+  - body-parser
+  - compression
+  - cookie-parser
+  - debug
+  - dotenv
+  - express
+  - hbs
+  - http-errors
+  - method-override
+  - mongoose
+  - morgan
+  - nodemon
 
 ### The approach was taken: 
 
