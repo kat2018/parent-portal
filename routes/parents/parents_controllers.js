@@ -24,13 +24,14 @@ router.get('/new', (req, res) => {
 });
 
 //CREATE Route
-// router.post('/', (req, res) => {
-//     const newParent = req.body.Parent
-//     .create(newParent)
-//     .then(() => {
-//         res.redirect('/parents')
-//     })
-// });
+router.post('/', (req, res) => {
+    const newParent = req.body
+    Parent
+    .create(newParent)
+    .then(() => {
+        res.redirect('/parents')
+    })
+});
 
 //SHOW Route
 router.get('/:id', (req,res)=> {
