@@ -1,16 +1,16 @@
 <h1>Participant Parents</h1>
 
-<ul>
+<ul class="collection">
     {{#each listOfParents}}
-    <li>
+    <li class="collection-item teal">
         <a href="/parents/{{_id}}">
-            <p>{{firstName}}</p>
-            <p>{{lastName}}</p>
-            <p>{{email}}</p>
+            <p>First Name: {{firstName}}</p>
+            <p>Last Name: {{lastName}}</p>
+            <p>e-mail: {{email}}</p>
         </a>
     </li>
     {{/each}}
     <div>
-    <a type="submit" href="/parents/new">New Parent</a>
+    <a class="waves-effect waves-light btn teal" type="submit" href="/parents/new">New Parent</a>
     </div>
 </ul>

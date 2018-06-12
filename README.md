@@ -25,6 +25,7 @@ Preview Wireframe
 - Mongodb
 - Heroku (hosting)
 - Github (version control)
+- Materialize (CSS)
 - Npm Packages: 
   - body-parser
   - compression

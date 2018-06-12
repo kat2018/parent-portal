@@ -1,13 +1,20 @@
-<h1>Create a New Parent Profile</h1>
+<div class="container new-profile">
+    <h1>Create a New Parent Profile</h1>
 
-<form action="/parents" method="POST">
-    <div>
-        <label>New Parent</label>
-            <input for="firstName" type="text" name="firstName" placeholder="First Name" value="{{parentProfile.firstName}}" />
-            <input for="lastName" type="text" name="lastName" placeholder="Last Name" value="{{parentProfile.lastName}}" />
-            <input for="email" type="email" name="email" placeholder="E-mail" value="{{parentProfile.email}}" />
-  
-        <button type="submit">Enter</button>
+    <div class="row">
+        <form class="col s12" action="/parents" method="POST">
+            <div class="row">
+                <div class="input-field col s6">
+                    <label>New Parent</label>
+                    <input id="input_text" data-length="10" for="firstName" type="text" name="firstName" placeholder="First Name" value="{{parentProfile.firstName}}" />
+                    <input id="input_text" data-length="10" for="lastName" type="text" name="lastName" placeholder="Last Name" value="{{parentProfile.lastName}}" />
+                    <input id="input_text" data-length="10" for="email" type="email" name="email" placeholder="E-mail" value="{{parentProfile.email}}" />
+                    <button class="waves-effect waves-light btn" type="submit">Enter</button>
+                
+                </div>
+                </form>
+
+            </div>
         </form>
     </div>
-</form>
+</div>

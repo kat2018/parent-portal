@@ -1,8 +1,17 @@
-body {
+body{
   padding: 0;
-  background-color: aquamarine;
+  background-color: black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font: 12px;
+  color: white;
+  font-size: 12px;
 }
 
+a p{
+  color: white;
+  font-size: 16px;
+}
+
+.new-profile{
+  background-color: gray;
+}
 

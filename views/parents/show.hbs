@@ -4,8 +4,8 @@
 <h3>Email: {{parentProfile.email}} </h3>
 
 <form action="/parents/{{parentProfile._id}}?_method=DELETE" method="post">
-    <button type="submit">Delete Parent</button>
+    <button class="waves-effect waves-light btn" type="submit">Delete Parent</button>
 </form>
 <a href="/parents/{{parentProfile._id}}/edit">
-    <button type="submit">Edit Parent</button>
+    <button class="waves-effect waves-light btn" type="submit">Edit Parent</button>
 </a>
