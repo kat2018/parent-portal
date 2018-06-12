@@ -4,16 +4,16 @@ Welcome to Parent Portal! project two at General Assembly by Katia Eidson.
 
 The goal of this project is to create a database for a school administrator to add new users (parents), include their dependents (child or children) and assign them to activities. 
 
-Heroku: https://lit-woodland-71027.herokuapp.com/
+[Heroku] (https://lit-woodland-71027.herokuapp.com/)
 
-Trello: https://trello.com/b/9JcnS5WL/parent-portal-wdi-project-2-kat2018
+[Trello] (https://trello.com/b/9JcnS5WL/parent-portal-wdi-project-2-kat2018)
 
-![ERD Direct Link](https://www.lucidchart.com/invitations/accept/9b07e6f3-3cb5-429c-8684-f5f7dda268ff)
+[ERD Direct Link](https://www.lucidchart.com/invitations/accept/9b07e6f3-3cb5-429c-8684-f5f7dda268ff)
 
 ![alt text](https://github.com/kat2018/parent-portal/blob/master/public/images/parentPortalERD.jpg)
 
 
-![Wireframe Direct Link (requires Figma Account)](https://www.figma.com/file/DurkYPDQyUfeimF9V6pLayLF/Parent-Portal)
+[Wireframe Direct Link (requires Figma Account)](https://www.figma.com/file/DurkYPDQyUfeimF9V6pLayLF/Parent-Portal)
 
 Preview Wireframe
 ![alt text](https://github.com/kat2018/parent-portal/blob/master/public/images/parentPortal.jpg)
