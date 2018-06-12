@@ -2,10 +2,10 @@
 
 <form action="/parents" method="POST">
     <div>
-        <label for="title">New Parent</label>
-            <input type="text" name="profile" value="{{parentProfile.firstName}}" />
-            <input type="text" name="profile" value="{{parentProfile.lastName}}" />
-            <input type="email" name="profile" value="{{parentProfile.email}}" />
+        <label>New Parent</label>
+            <input for="firstName" type="text" name="firstName" placeholder="First Name" value="{{parentProfile.firstName}}" />
+            <input for="lastName" type="text" name="lastName" placeholder="Last Name" value="{{parentProfile.lastName}}" />
+            <input for="email" type="email" name="email" placeholder="E-mail" value="{{parentProfile.email}}" />
   
         <button type="submit">Enter</button>
         </form>

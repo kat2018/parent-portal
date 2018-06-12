@@ -68,11 +68,6 @@ app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/parents", parentProfile);
 
-// //controllers
-// const parents_controllers = require("./routes/parents/parents_controllers");
-
-// app.use("/routes/parents", parentsController); NEED TO FIX THIS
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
