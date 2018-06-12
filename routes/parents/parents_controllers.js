@@ -19,9 +19,9 @@ router.get('/', (req, res, next) => {
 });
 
 //NEW Route
-// router.get('/parents/new', (req, res) => { 
-    // res.render('/parents/new')
-// });
+router.get('/new', (req, res) => { 
+    res.render('parents/new')
+});
 
 //CREATE Route
 // router.post('/', (req, res) => {
@@ -37,7 +37,7 @@ router.get('/:id', (req,res)=> {
     Parent
     .findById(req.params.id)
     .then((parentProfile)=> {
-        res.render('/parents/show', {
+        res.render('parents/show', {
             parentProfile: parentProfile
         })
     })
@@ -62,12 +62,12 @@ router.get('/:id', (req,res)=> {
 // });
 
 //DELETE Route
-// router.delete('/:id', (req, res)=> {
-//     Parent.findByIdAndRemove(req.params.id)
-//     .then(()=>{
-//         console.log('Deleted user successfully')
-//         res.redirect('/parents')
-//     })
-// });
+router.delete('/:id', (req, res)=> {
+    Parent.findByIdAndRemove(req.params.id)
+    .then(()=>{
+        console.log('Deleted user successfully')
+        res.redirect('/parents')
+    })
+});
 
 module.exports = router;
